@@ -1437,7 +1437,8 @@ def trim(string, length):
     if length == 1:
         return string[0]
     if length > 5:
-        return '..%s' % string[-(length-2):]
+        # return '..%s' % string[-(length-2):]
+        return '%s..' % string[:(length-2)]
     return '...'
 
 # ------------------------------------------------------------------------- #
